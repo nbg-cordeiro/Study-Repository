@@ -1,4 +1,4 @@
-# 📚 Main Repository - Estudos e Práticas
+# 📚 Study Repository - Estudos e Práticas
 
 Bem-vindo ao meu repositório central!
 Aqui concentro meus exercícios de programação, algoritmos e pequenos projetos de teste.
