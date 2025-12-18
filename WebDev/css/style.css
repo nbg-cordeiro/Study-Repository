@@ -9,11 +9,18 @@ body{
 
 .topButton{
     border: 0;
-    width: 80px;
-    padding: 10px 0px;
+    border-radius: 25px;
+    width: 25px;
+    height: 25px;
     justify-content: center;
     display: flex;
-    background-color: #000000;
+    margin-left:20px;
+    margin-right:20px;
+    background-color: #d6d6d6;
+        background-size: auto 60%;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: center;
     color: white;
     font-size: 10px;
     text-decoration: none;
@@ -22,44 +29,54 @@ body{
 .topCard{
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 40px; 
     background-color: #333333;
+    color: black;
     justify-content: center;
     align-items: center;
     transition: 0.1s;
 }
 .slot {
-    width: 100%;
+    width:auto;
     height: 100%;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
 }
-
 .topCard .topButton {
     opacity: 40%;
 }
-
 .topCard p {
     margin: 0;
 }
-
+.left{
+    background-image: url("../images/left-arrow.png");
+}
+.right{
+    background-image: url("../images/right-arrow.png");
+}
+.home{
+    background-image: url("../images/home.png");
+    background-size: auto 80%;
+}
 .topCard:hover{
     background-color: #222222;
     height:60px;
     .topButton{
         opacity: 100%;
         transition:0.1s;
+        width:60%;
         transform: scale(1.5);
     }
     .topButton:hover{
         transition:0.1s;
         transform:scale(1.6);
         font-weight:600;
+        background-color: #c1d4d3;
     }
 }
