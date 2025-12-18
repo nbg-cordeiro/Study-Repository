@@ -6,6 +6,10 @@ body{
     font-family:fantasy;
     transition: 0;
 }
+body a{
+    color:white;
+    text-decoration: none;
+}
 
 .topButton{
     border: 0;
@@ -28,7 +32,8 @@ body{
     margin: 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    position: absolute;
+    position: fixed;
+    z-index: 1000;
     top: 0;
     left: 0;
     width: 100%;
