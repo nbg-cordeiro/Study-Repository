@@ -14,8 +14,6 @@ body{
     height: 25px;
     justify-content: center;
     display: flex;
-    margin-left:20px;
-    margin-right:20px;
     background-color: #d6d6d6;
         background-size: auto 60%;
         background-repeat: no-repeat;
@@ -37,9 +35,14 @@ body{
     height: 40px; 
     background-color: #333333;
     color: black;
-    justify-content: center;
     align-items: center;
     transition: 0.1s;
+}
+.center-slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 .slot {
     width:auto;
@@ -70,12 +73,15 @@ body{
     .topButton{
         opacity: 100%;
         transition:0.1s;
-        width:60%;
-        transform: scale(1.5);
+        width:40px;
+        transform: scale(1.7);
+    }
+    .center-slot{
+        gap: 40px;
     }
     .topButton:hover{
         transition:0.1s;
-        transform:scale(1.6);
+        transform:scale(1.8);
         font-weight:600;
         background-color: #c1d4d3;
     }
