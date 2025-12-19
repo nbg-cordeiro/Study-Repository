@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id = "1">
 
     <head>
         <title>Page 1</title>
@@ -9,17 +9,12 @@
     </head>
 
     <body>
-        <div class="topCard">
-            <div class="slot">X</div>
-            <div class="slot">X</div>
-            <div class="center-slot">
-                <a class="topButton left"></a>
-                <a class="topButton home" href="index.html"></a>
-                <a class="topButton right" href="page2.html"></a>
-            </div>
-            <div class="slot">X</div>
-            <div class="slot">X</div>
-        </div>
+
+        <header>
+            <button class="left" onclick="goBack()"></button>
+            <button class="home" onclick="goHome()"></button>
+            <button class="right" onclick="goNext()"></button>
+        </header>
         
         <h1>This is the first page</h1>
         <h2>This is my first topic</h2>
@@ -28,6 +23,24 @@
         <a href="https://www.google.com/search?q=neco+arc">neco arc image above!</a><br>
         <div class="table"></div>
         <script>squares();</script>
+
+        <footer>
+
+        </footer>
     </body>
 
 </html>
+ <!--
+        Older Header (using older stylesheet):
+        <div class="topCard">
+            <div class="slot">X</div>
+            <div class="slot">X</div>
+            <div class="center-slot">
+                <a class="topButton left" href="page1.html"></a>
+                <a class="topButton home" href="index.html"></a>
+                <a class="topButton right" href="page3.html"></a>
+            </div>
+            <div class="slot">X</div>
+            <div class="slot">X</div>
+        </div>
+-->
