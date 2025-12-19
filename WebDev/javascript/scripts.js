@@ -1,6 +1,6 @@
 function squares(){
     for(let i=0;i<10;i++){
-        let text="";
+        let text=" ";
         for(let i=0;i<8;i++){
             for(let j=0;j<8;j++){
                 text+='<div class="square';
@@ -13,6 +13,7 @@ function squares(){
                 text+='"></div>'
             }
         }
+        text+="<style>.square:hover{transform:scale(1.05);}.table{height: 200px;width: 200px;display:grid;grid-template-columns: repeat(8, 1fr);grid-template-rows: repeart(8 1fr);}.black{background-color: black;}.white{background-color: white;}</style>"
         document.getElementsByClassName("table")[0].innerHTML = text;
     }
 }

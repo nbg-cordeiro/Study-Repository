@@ -7,7 +7,7 @@
     --purple3:rgb(75, 5, 170);
     --purple4:rgb(225, 210, 255);
     --purple5:rgb(95, 35, 225);
-
+    --purple6:rgb(145, 85, 225);
 }
 body {
     font-family: "Segoe UI", Roboto, sans-serif;
@@ -85,6 +85,10 @@ section h2:hover{
 header button{
     margin-block: 10px;
     margin-inline: 5px;
+}
+header button:hover{
+    background-color: var(--purple6);
+    transform: scale(1.05);
 }
 .left{
     background-image: url("../images/left-arrow.png");
