@@ -16,3 +16,25 @@ function squares(){
         document.getElementsByClassName("table")[0].innerHTML = text;
     }
 }
+function goNext(){
+    const pages=3;
+    const htmlTag = document.documentElement;
+    const currentPage = parseInt(htmlTag.id);
+    let nextPage=currentPage;
+    if(currentPage<3){
+        nextPage=currentPage+1;
+    }
+    location.href = "page"+nextPage+".html";
+}
+function goBack(){
+    const htmlTag = document.documentElement;
+    const currentPage = parseInt(htmlTag.id);
+    let previousPage=currentPage;
+    if(currentPage>0){
+        previousPage=currentPage-1;
+    }
+    location.href = "page"+previousPage+".html";
+}
+function goHome(){
+    location.href = "index.html";
+}
