@@ -15,4 +15,4 @@ function squares(){
         }
         document.getElementsByClassName("table")[0].innerHTML = text;
     }
-}let 
+}
