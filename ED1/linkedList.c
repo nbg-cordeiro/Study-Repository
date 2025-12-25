@@ -9,14 +9,14 @@ typedef struct Node{
 Node* createNode (int);
 void append(Node**, int);
 void removeValue(Node**, int);
-void printList(Node**);
+void printList(Node*);
 void freeList(Node**);
 
 int main (void)
 {
     Node* head = createNode(0);
     printf("Before appending:\n");
-    printList(&head);
+    printList(head);
     
     for(int i=1; i < 5; i++){
         append(&head,10*i);
@@ -24,11 +24,11 @@ int main (void)
     }
 
     printf("\nAfter appending:\n");
-    printList(&head);
+    printList(head);
 
     removeValue(&head,20);
     printf("\nAfter removing:\n");
-    printList(&head);
+    printList(head);
 
     freeList(&head);
     return 0;
@@ -73,11 +73,11 @@ void freeList(Node** headRef)
     }
 }
 
-void printList(Node** headRef)
+void printList(Node* head)
 {
-    while((*headRef)!=NULL)
+    while((head)!=NULL)
     {
-        printf("%d\n",(*headRef)->value);
-        headRef=&((*headRef)->next);
+        printf("%d\n",head->value);
+        head=head->next;
     }
 }
