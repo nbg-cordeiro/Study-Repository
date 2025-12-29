@@ -90,3 +90,14 @@ void check(point a, point b)
     double dis = distance(a,b);
     printf("distance between %c and %c: %.2lf \n\n", a.letter, b.letter, dis);
 }
+
+int* range(int min, int max)
+{
+    if(min>max)
+        return NULL;
+    int *vet = malloc(sizeof(int)*((1 + max) - min));
+    for(int i=0; (min+i) <= max; i++)
+        vet[i]=min+i;
+
+    return vet;
+}
