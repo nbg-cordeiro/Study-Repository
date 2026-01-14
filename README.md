@@ -21,6 +21,7 @@ O objetivo é documentar minha evolução técnica e servir como consulta rápid
 O conteúdo está organizado por tópico:
 
 * **`/APC`** - Exercícios e exemplos usados para minha monitoria de APC (Algoritmos e Programação de Computadores).
+* **`/ED1`** - Estudos a respeito de Estruturas de Dados 1™
 * **`/OBI`** - Listas de exercício resolvidas do Preparatório para OBI, um curso de extensão que fiz.
 * **`/Treino_Livre`** - Pequenos exercícios resolvidos do Treino Livre - [CD-MOJ](https://moj.naquadah.com.br/new/).
 * **`/WebDev`** - Meus estudos de desenvolvimento web (HTML,CSS e JS)
